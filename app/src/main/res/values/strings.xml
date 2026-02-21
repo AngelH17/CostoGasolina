@@ -5,4 +5,6 @@
     <string name="litros">Litros</string>
     <string name="propina">Propina</string>
     <string name="ingresa_gasolina">Ingresa precio por litro de Gasolina</string>
+    <string name="monto_total">Monto Total: %s</string>
+    <string name = "agregar_propina"> Agregar Propina</string>
 </resources>
