@@ -41,6 +41,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.mexiti.costogasolina.ui.theme.CostoGasolinaTheme
+import org.jetbrains.annotations.VisibleForTesting
 import java.text.NumberFormat
 
 class MainActivity : ComponentActivity() {
@@ -191,8 +192,8 @@ fun AddTip(
     }
 }
 
-
-private fun calcularMonto(precio: Double, cantLitros: Double, darPropina: Boolean, propina:Double ): String{
+@VisibleForTesting
+internal fun calcularMonto(precio: Double, cantLitros: Double, darPropina: Boolean, propina:Double ): String{
     var monto = precio * cantLitros
     if ( darPropina){
         monto +=  propina
